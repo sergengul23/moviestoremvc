@@ -1,0 +1,193 @@
+﻿@using Models.Entities
+@model ShoppingCart
+
+<style>
+    .form-control:focus{
+        box-shadow: none;
+    }
+</style>
+
+<style>
+    .spCoverType, .spCategory{
+        background-color: #CCE0F5;
+        font-weight: bold;
+        font-size: 14px;
+        color: black;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        width: 150px;
+        height: 35px;
+        text-align: center;
+        line-height: 1.25;
+    }
+
+	.inputInfo{
+		display: block;
+		height: 45px;
+		line-height: 1.5;
+	    width: 100%;
+		border: 1px solid black;
+		border-radius: 5px;
+		text-align: left;
+		letter-spacing: 1.2px;
+		cursor: text;
+		margin-top: 5px;
+		font-size: 15px;
+		color: black;
+		background-color: #ffffff;
+		outline: none;
+		border-bottom-width: 2px;
+		transition: all 0.3s ease;
+		padding-left: 10px;
+	}
+
+	.inputInfo:focus, .inputInfo:valid{
+		display: block;
+		height: 45px;
+		line-height: 1.5;
+	    width: 100%;
+		border: 2px solid black;
+		border-radius: 5px;
+		margin-top: 5px;
+		font-size: 15px;
+		color: black;
+		background-color: #fff;
+		outline: none;
+		transition: all 0.3s ease;
+		padding-left: 10px;
+	}
+
+    .headerCount{
+        color: rgba(0, 102, 204, .88);
+        letter-spacing: 1px;
+        margin-left: 10px;
+    }
+
+    .fcCount{
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .btnBack{
+        background-color: #fff;
+        color: #77dd77;
+        font-weight: bold;
+        border: 2px solid #77dd77;
+        border-radius: 5px;
+    }
+
+    .btnBack:hover{
+        color: #fff;
+        background-color: #77dd77;
+        font-weight: bold;
+        border: 2px solid #77dd77;
+        border-radius: 5px;
+    }
+
+    .btnAdd{
+        color: rgba(0, 102, 204, .88);
+        background-color: #fff;
+        font-weight: bold;
+        border: 2px solid rgba(0, 102, 204, .48);
+        border-radius: 5px;
+    }
+
+    .btnAdd:hover{
+        background-color: rgba(0, 102, 204, .48);
+        color: #fff;
+        font-weight: bold;
+        border: 2px solid rgba(0, 102, 204, .88);
+        border-radius: 5px;
+    }
+
+    .card-footer{
+        background-color: #fff;
+        border: 1px solid transparent;
+    }
+
+    .buttonSection{
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-radius: 5px;
+    }
+</style>
+
+<form method="post">
+    <input hidden asp-for="ProductId" />
+        <div class="card container pt-4" style="border-radius: 5px;">
+            <div class="card-header ml-0 row" style="background-color: #ffffff;">
+                <div class="col-12 col-md-6" style="background-color: #ffffff;">
+                    <h1 style="color: black;">@Model.Product.Title</h1>
+                    <p class="text-warning">by @Model.Product.Director</p>
+                </div>
+                <div class="col-12 col-md-6 text-end pt-4">
+                    <span class="badge pt-2 spCoverType">@Model.Product.Genre.Name</span>
+                    <span class="badge pt-2 spCategory">@Model.Product.Rating</span>
+                </div>
+            </div>
+            <div class="card-body row container">
+                <div class="container rounded p-2">
+                    <div class="row">
+                        <div class="col-8 col-lg-8">
+
+                            <div class="row pl-2">
+                                <h5>Release Year: @Model.Product.ReleaseYear</h5>
+                            </div>
+                            <div class="row pl-2">
+                                <h5 class="pb-2">List Price: <strike>@Model.Product.ListPrice.ToString("c")</strike></h5>
+                            </div>
+                            <div class="row text-center">
+                                <div class="p-1 col-2 bg-secondary border-bottom">
+                                    <div>Quantity</div>
+                                </div>
+                                <div class="p-1 col-2 bg-secondary border-bottom">
+                                    <div>1-50</div>
+                                </div>
+                                <div class="p-1 col-2 bg-secondary border-bottom">
+                                    <div>51-100</div>
+                                </div>
+                                <div class="p-1 col-2 bg-secondary border-bottom">
+                                    <div>100+</div>
+                                </div>
+                            </div>
+                            <div class="row text-center pl-2" style="color:maroon; font-weight:bold">
+                                <div class="p-1 col-2 bg-secondary">
+                                    <div>Price</div>
+                                </div>
+                                <div class="p-1 col-2 bg-secondary">
+                                    <div>@Model.Product.Price.ToString("c")</div>
+                                </div>
+                                <div class="p-1 col-2 bg-secondary">
+                                    <div>@Model.Product.Price50.ToString("c")</div>
+                                </div>
+                                <div class="p-1 col-2 bg-secondary">
+                                    <div>@Model.Product.Price100.ToString("c")</div>
+                                </div>
+                            </div>
+                            <div class="row pl-2 mt-4">
+                                <p class="text-secondary">@Html.Raw(Model.Product.Description)</p>
+                            </div>
+                            <div class="row pl-2 mt-3">
+                                <div class="col-2 text-primary pt-3"><h4 class="headerCount">Count</h4></div>
+                                <div class="col-10"><input asp-for="Count" class="inputInfo" /></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 offset-lg-1 text-center imgUrl">
+                            <img src="@Model.Product.ImageUrl" width="100%" class="rounded" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row buttonSection">
+                    <div class="col-12 col-md-6 pb-1">
+                        <a class="btn btn-success form-control btnBack" style="height:50px;" asp-action="Index">Back to Home</a>
+                    </div>
+                    <div class="col-12 col-md-6 pb-1">
+                        <button type="submit" value="Add to Cart" class="btn btn-primary form-control btnAdd" style="height:50px;">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</form>

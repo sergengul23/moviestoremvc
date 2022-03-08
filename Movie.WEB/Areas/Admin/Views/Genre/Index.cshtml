@@ -1,0 +1,44 @@
+﻿@using Models.Entities
+@model IEnumerable<Genre>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-secondary">Genre List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a class="btn btn-outline-primary" style="border-radius: 8px;" asp-area="Admin" asp-controller="Genre" asp-action="Create"><i class="fas fa-plus"></i>Create New</a>
+        </div>
+    </div>
+</div>
+
+<br />
+
+<table class="table table-light table-bordered table-hover" style="width: 100%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var genre in Model)
+        {
+            <tr>
+                <td width="50%">@genre.Id</td>
+                <td width="30%">@genre.Name</td>
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a class="btn btn-secondary mx-2" style="border-radius: 8px;" asp-controller="Genre" asp-action="Edit" asp-route-id="@genre.Id">
+                            <i style="color: aqua;" class="fa-solid fa-pen-to-square"></i> Edit
+                            </a>
+                        <a class="btn btn-secondary mx-2" style="border-radius: 8px;" asp-controller="Genre" asp-action="Delete" asp-route-id="@genre.Id">
+                            <i style="color: crimson;" class="fa-solid fa-trash-can"></i> Delete
+                            </a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

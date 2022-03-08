@@ -1,0 +1,111 @@
+﻿@model Models.ViewModels.ProductVM
+
+<style>
+    .form-control:focus {
+        box-shadow: none;
+    }
+
+    .form-select:focus {
+        box-shadow: none;
+    }
+</style>
+
+
+<form method="post" asp-action="Upsert" enctype="multipart/form-data">
+    <input asp-for="Product.Id" hidden />
+    <input asp-for="Product.ImageUrl" hidden />
+    <div class="border p-3 mt-4 row">
+        <div class="row pb-2">
+            <h3 class="text-black">@(Model.Product.Id != 0 ? "Update" : "Create") Product</h3>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <label asp-for="Product.Title"></label>
+            <input asp-for="Product.Title" class="form-control" />
+            <span asp-validation-for="Product.Title" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Product.Description"></label>
+            <textarea asp-for="Product.Description" rows="2" class="form-control"></textarea>
+            <span asp-validation-for="Product.Description" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Product.ReleaseYear"></label>
+            <input asp-for="Product.ReleaseYear" class="form-control" />
+            <span asp-validation-for="Product.ReleaseYear" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Product.Rating"></label>
+            <input asp-for="Product.Rating" class="form-control" />
+            <span asp-validation-for="Product.Rating" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Product.Director"></label>
+            <input asp-for="Product.Director" class="form-control" />
+            <span asp-validation-for="Product.Director" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Product.ListPrice"></label>
+            <input asp-for="Product.ListPrice" class="form-control" />
+            <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Product.Price"></label>
+            <input asp-for="Product.Price" class="form-control" />
+            <span asp-validation-for="Product.Price" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Product.Price50"></label>
+            <input asp-for="Product.Price50" class="form-control" />
+            <span asp-validation-for="Product.Price50" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Product.Price100"></label>
+            <input asp-for="Product.Price100" class="form-control" />
+            <span asp-validation-for="Product.Price100" class="text-danger"></span>
+        </div>
+        <div class="mb-3 col-6">
+            <label asp-for="Product.GenreId">Category</label>
+            <select asp-for="Product.GenreId" asp-items="@Model.GenreList" class="form-select">
+                <option disabled selected>..Select Genre..</option>
+            </select>
+            <span asp-validation-for="Product.GenreId" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Product.ImageUrl"></label>
+            <input type="file" id="uploadBox" name="file" class="form-control" />
+        </div>
+        <div class="col-12 mt-1">
+            @if (Model.Product.Id != 0)
+            {
+                <button type="submit" class="btn btn-outline-primary" style="width: 150px; height: 60px; border-radius: 8px;">Update</button>
+            }
+            else
+            {
+                <button type="submit" onclick="return ValidateInput()" class="btn btn-outline-primary" style="width: 150px; height: 60px; border-radius: 8px;">Create</button>
+            }
+            <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="btn btn-outline-danger" style="width: 150px; margin-left: 10px; height: 60px; line-height: 2.25; border-radius: 8px;">Back</a>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+    <partial name="_ValidationScriptsPartial" />
+    }
+
+<script>
+	function ValidateInput(){
+		if(document.getElementById("uploadBox").value==""){
+			Swal.fire({
+			  icon: 'error',
+			  title: 'Oops...',
+			  text: 'Please upload an Image!',
+			});
+			return false;
+		}
+		return true;
+	}
+</script>
+}

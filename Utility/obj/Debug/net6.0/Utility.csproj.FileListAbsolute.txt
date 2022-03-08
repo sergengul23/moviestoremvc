@@ -1,0 +1,24 @@
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\bin\Debug\net6.0\Utility.deps.json
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\bin\Debug\net6.0\Utility.dll
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\bin\Debug\net6.0\ref\Utility.dll
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\bin\Debug\net6.0\Utility.pdb
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.AssemblyInfoInputs.cache
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.AssemblyInfo.cs
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.csproj.CoreCompileInputs.cache
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.dll
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\ref\Utility.dll
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.pdb
+C:\Users\sergen.gul\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.csproj.AssemblyReference.cache
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\bin\Debug\net6.0\Utility.deps.json
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\bin\Debug\net6.0\Utility.dll
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\bin\Debug\net6.0\Utility.pdb
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.csproj.AssemblyReference.cache
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.AssemblyInfoInputs.cache
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.AssemblyInfo.cs
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.csproj.CoreCompileInputs.cache
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.dll
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\refint\Utility.dll
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\Utility.pdb
+C:\Users\Sergen Gül\Desktop\Movie.WEB\Utility\obj\Debug\net6.0\ref\Utility.dll

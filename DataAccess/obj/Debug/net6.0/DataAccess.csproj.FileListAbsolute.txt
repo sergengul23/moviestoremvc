@@ -1,0 +1,34 @@
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\ref\DataAccess.dll
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\Models.dll
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\Models.pdb
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\Users\sergen.gul\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\Models.dll
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\bin\Debug\net6.0\Models.pdb
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
+C:\Users\Sergen Gül\Desktop\Movie.WEB\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
